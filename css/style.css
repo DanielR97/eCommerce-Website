@@ -79,6 +79,24 @@ h3 {
     cursor: pointer;
 }
 
+.table-name {
+    margin-left: 5%;
+}
+
+table {
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+th { 
+    padding: 5px;
+}
+
+.headers {
+    background-color: rgb(170, 170, 170);
+}
+
 /* Hide line arrows in number inputs */
 
 /* For Firefox */

@@ -14,9 +14,9 @@ switch ($op) {
         $content = 'php/removeClient.php';
         $title = 'Remove a client';
         break;
-    case 'listClientOrders':
-        $content = 'php/listClientOrders.php';
-        $title = 'List client\'s orders';
+    case 'listClients':
+        $content = 'php/listClients.php';
+        $title = 'List client\'s';
         break;
     case 'orderSomething':
         $content = 'php/addOrderForm.php';
@@ -90,7 +90,7 @@ switch ($op) {
 					<a class='dropdown-item' href='?op=insertClient'>Insert a client</a>
 					<a class='dropdown-item' href='?op=updateClient'>Update a client</a>
 					<a class='dropdown-item' href='?op=removeClient'>Remove a client</a>
-					<a class='dropdown-item' href='?op=listClientOrders'>List client's orders</a>
+					<a class='dropdown-item' href='?op=listClients'>List client's</a>
 				</div>
             </li>
             <li class='nav-item dropdown'>

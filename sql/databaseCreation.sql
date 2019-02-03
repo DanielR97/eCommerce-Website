@@ -1,3 +1,4 @@
+-- Database and tables creation
 CREATE DATABASE IF NOT EXISTS Commerce;
 USE Commerce;
 
@@ -9,6 +10,7 @@ CREATE TABLE IF NOT EXISTS Client(
 	Phone VARCHAR(13),
 	PRIMARY KEY(Client_ID)
 );
+
 
 CREATE TABLE IF NOT EXISTS Client_Order(
 	Order_ID VARCHAR(9) NOT NULL,
