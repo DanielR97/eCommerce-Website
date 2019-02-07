@@ -1,9 +1,17 @@
-<form id='add-order' name='additionForm' action='php/addOrder.php' method='post' enctype='multipart/form-data'>
+<form id='update-order' name='updateForm' action='php/changeOrder.php' method='post' enctype='multipart/form-data'>
 	<h3>Order Something</h3>
 	<br>
 	<div>
-		<label for='order-id'>ID: </label>&nbsp;
-		<input type='text' class='form-input' id='order-id' name='order-id' placeholder=' Order ID' title='Order ID' maxlength='9' required />
+		<label for='order-id'>Order ID: </label>
+		<select id='order-id' class='form-input' name='order-id' title='Order ID' required >
+			<option value=''>Select the Order's ID</option>
+            <?php include('selectOrderId.php'); ?>
+        </select>
+    </div>
+	<br>
+	<div>
+		<label for='new-order-id'>New Order ID: </label>&nbsp;
+		<input type='text' class='form-input' id='new-order-id' name='new-order-id' placeholder=' New Order ID' title='New Order ID' maxlength='9' required />
 	</div>
 	<br>
 	<div>

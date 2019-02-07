@@ -34,3 +34,12 @@ CREATE TABLE IF NOT EXISTS Composed(
 	FOREIGN KEY (Product_ID) REFERENCES Product(Product_ID),
 	FOREIGN KEY (Order_ID) REFERENCES Client_Order(Order_ID)
 );
+
+
+-- Adding cascade on update and delete
+ALTER TABLE `client_order` DROP FOREIGN KEY `client_order_ibfk_1`;
+ALTER TABLE `client_order` ADD CONSTRAINT `client_order_ibfk_1` FOREIGN KEY (`Client_ID`) REFERENCES `client`(`Client_ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `composed` DROP FOREIGN KEY `composed_ibfk_1`;
+ALTER TABLE `composed` ADD CONSTRAINT `composed_ibfk_1` FOREIGN KEY (`Product_ID`) REFERENCES `product`(`Product_ID`)ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `composed` DROP FOREIGN KEY `composed_ibfk_2`;
+ALTER TABLE `composed` ADD CONSTRAINT `composed_ibfk_2` FOREIGN KEY (`Order_ID`) REFERENCES `client_order`(`Order_ID`) ON DELETE CASCADE ON UPDATE CASCADE;
