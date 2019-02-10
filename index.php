@@ -7,11 +7,11 @@ switch ($op) {
         $title = 'Insert a client';
         break;
     case 'updateClient':
-        $content = 'php/updateClient.php';
+        $content = 'php/updateClientForm.php';
         $title = 'Update a client';
         break;
     case 'removeClient':
-        $content = 'php/removeClient.php';
+        $content = 'php/removeClientSelection.php';
         $title = 'Remove a client';
         break;
     case 'listClients':
@@ -23,11 +23,11 @@ switch ($op) {
         $title = 'Order something';
         break;
     case 'changeOrder':
-        $content = 'php/changeOrder.php';
+        $content = 'php/changeOrderForm.php';
         $title = 'Change an order';
         break;
     case 'cancelOrder':
-        $content = 'php/cancelOrder.php';
+        $content = 'php/cancelOrderSelection.php';
         $title = 'Cancel an order';
         break;
     case 'listAllOrders':
@@ -39,11 +39,11 @@ switch ($op) {
         $title = 'Add a new product';
         break;
     case 'updateProduct':
-        $content = 'php/updateProduct.php';
+        $content = 'php/updateProductForm.php';
         $title = 'Update a product';
         break;
     case 'removeProduct':
-        $content = 'php/removeProduct.php';
+        $content = 'php/removeProductSelection.php';
         $title = 'Remove a product';
         break;
     case 'listProducts':

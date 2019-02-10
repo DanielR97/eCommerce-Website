@@ -5,7 +5,7 @@ $phone = $_POST['phone'];
 $birthdate = $_POST['birthdate'];
 $gender = $_POST['gender'];
 include 'connection.php';
-$query = "SELECT * FROM client WHERE Client_ID='$clientId'";
+$query = "SELECT * FROM Client WHERE Client_ID='$clientId'";
 $go_query = mysqli_query($connection, $query);
 $num_regs = mysqli_num_rows($go_query);
 if ($num_regs == 0) {
