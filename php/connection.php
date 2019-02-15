@@ -4,7 +4,7 @@ function connect() {
     $server = 'localhost';
     $user = 'Pepe';
     $password = 'pepa';
-    $db = 'commerce';
+    $db = 'Commerce';
     $connection = mysqli_connect($server, $user, $password, $db);
     return $connection;
 }

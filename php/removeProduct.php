@@ -9,6 +9,7 @@ if (!empty($_POST['check_list'])) {
             $delete = "DELETE From Product WHERE Product_ID = '$selected';";
             $go_query = mysqli_query($connection, $delete);
             if ($go_query) {
+                unlink('../img/product_pictures/'.$selected.'.jpg');
                 $message = "The products were successfully removed";
             } else {
                 $message = "Couldn't remove the product <b>$selected</b>";
