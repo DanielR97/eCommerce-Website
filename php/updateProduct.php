@@ -17,6 +17,7 @@ if ($num_regs == 1) {
         $go_query = mysqli_query($connection, $update);
     }
     if ($go_query && $img_uploaded) {
+        unlink('../img/product_pictures/'.$productId.'.jpg');
         $message = "The product's <b>$productId</b> information was successfully updated";
     } else {
         $message = "Couldn't update the product's <b>$productId</b> information";

@@ -8,6 +8,8 @@ if ($go_query->num_rows > 0) {
         $productId = utf8_encode($register['Product_ID']);
         $productName = utf8_encode($register['Product_Name']);
         echo "<input type='checkbox' name='check_list[]' value='$productId'> $productId - $productName<br>";
+        echo "<img src='img/product_pictures/" . $productId . ".jpg' alt='Product Picture' height='150' widht='150'>";
+        echo "<br>";
     }
 } else {
     echo "There are no products";
