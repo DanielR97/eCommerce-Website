@@ -1,5 +1,5 @@
 <form id='update-order' name='updateForm' action='php/changeOrder.php' method='post' enctype='multipart/form-data'>
-	<h3>Order Something</h3>
+	<h3>Change an Order</h3>
 	<br>
 	<div>
 		<label for='order-id'>Order ID: </label>
