@@ -1,2 +1,2 @@
 # eCommerce Website
-Proyect made to learn PHP basics
+Project made to learn PHP basics
